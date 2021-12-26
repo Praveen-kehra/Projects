@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+
+<body>
+    {{>header}}
+    {{!-- <h1>My name is Praveen and Iam {{Age}} years old and this is {{Name}} page.</h1> --}}
+    <canvas id='canvas'></canvas>
+    <img id='sun' src="/image/sun.png" alt="sum">
+    <img class='storm-1' src="/image/storm.png" alt="sum">
+    <img class='storm-2' src="/image/storm.png" alt="sum">
+
+    <div id='main-container'>
+        <form>
+            <input id='location' type="text" placeholder="Location" autocomplete="off">
+            <button id='submit' type="submit">Submit</button>
+        </form>
+        <br>
+        <p id="weather"></p>
+    </div>
+
+    <div id='contact'>
+        <p>
+            API used from: <a href="https://weatherstack.com/">weatherstack.com</a><br>
+            Created by Praveen(02-01-2021)
+         </p>
+
+    </div>
+    
+    {{>footer}}
+    <script src="/js/index-script.js"></script>
+    <script src="/js/canvas.js"></script>
+</body>
+</html>

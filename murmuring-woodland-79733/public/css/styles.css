@@ -1,0 +1,167 @@
+h1{
+    font-family: arial;
+    margin: 10px auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(235, 231, 231);
+}
+
+#canvas{
+    position: fixed;
+    top: 0 ;
+    right: 160px;
+    width: 200px;
+    height: 100%;
+    z-index: -1;
+}
+
+#main-container{
+    color: rgb(77, 73, 73);
+    font-family: arial;
+    max-width: 600px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+footer{
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    background-color: aqua;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: 10%;
+}
+
+header{
+    margin: 20px  auto;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(204, 201, 201);
+    max-width: 600px;
+    margin: 40px auto;
+    align-content: center;
+}
+
+header a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 10px;
+}
+
+form input{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    margin-right: 6px;
+}
+
+form button{
+    padding: 5px;
+    background-color: rgb(61, 190, 61);
+    border: 1px solid green;
+    cursor: pointer;
+    color: rgb(3, 46, 20);
+    border-radius: 2px;
+    position: absolute;
+}
+
+form button:hover{
+    border: 1px solid rgb(8, 90, 8);
+}
+
+
+#weather{
+    border: 1px solid rgb(141, 150, 163);
+    padding: 10px;
+    box-shadow: 4px 3px 10px rgb(105, 105, 156);
+    border-radius: 3px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    min-height: max-content;
+    max-width: max-content;
+    min-width: 150px;
+}
+
+#weather:empty{
+    border: none;
+}
+
+#location{
+    margin-bottom: 2px;
+}
+
+#sun{
+    z-index: -1;
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    animation: move-sun 2s 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move-sun{
+    
+    100%{
+        right: 100px;
+        top: 20px;
+    }
+}
+@keyframes move-storm-1{
+    
+    100%{
+        right: 150px;
+        opacity: 0.6;
+    }
+}
+@keyframes move-storm-2{
+    
+    100%{
+        right: 200px;
+        opacity: 0.7;
+    }
+}
+
+.storm-1{
+    z-index: -1;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    width: 60px;
+    height: 60px;
+    animation: move-storm-1 2s 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0.8;
+}
+.storm-2{
+    z-index: -1;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 60px;
+    height: 60px;
+    animation: move-storm-2 2s 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#contact{
+    position: absolute;
+    right: 5%;
+    text-align: center;
+}
+#contact a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* .greeb{
+    background-color: rgb(100, 183, 189);
+} */
